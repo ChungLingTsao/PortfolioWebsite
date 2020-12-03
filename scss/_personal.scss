@@ -1,0 +1,28 @@
+#about-section {
+	/* 
+	 * If screen width 990px or less
+	 */
+	@media screen and (max-width: 990px) {
+		p {
+			@include fontsize(11);
+		}
+		.personal {
+			@include fontsize(9);
+		}
+	}	
+	/* 
+	* If screen width 991px or more
+	*/
+	@media screen and (min-width: 991px) {
+		p {
+			@include fontsize(15);
+		}
+		.personal {
+			@include fontsize(12);
+		}
+	}
+	
+	h1, p {
+		padding: 0px 20px 0px 20px;
+	}
+}

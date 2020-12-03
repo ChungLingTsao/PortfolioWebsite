@@ -1,0 +1,22 @@
+/* 
+ * Vendor prefixes for background-opacity
+ */
+@mixin background-opacity($color, $opacity: 0.3) {
+    background: $color;
+    background: rgba($color, $opacity);
+}
+
+/* 
+ * Makes it easier to assign rem font-sizes
+ */
+@mixin fontsize($size) {
+  font-size: $size * 1px;
+  font-size: $size * 0.1rem;
+}
+/* 
+ * Function for background-opacity
+ */
+@function background-opacity($color, $opacity) {
+  $background: rgba($color, $opacity);
+  @return $background
+}

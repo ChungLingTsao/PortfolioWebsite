@@ -1,0 +1,31 @@
+body {
+	background-color: $light_gray;
+	line-height: 16px;
+	@include fontsize(14);
+}
+
+p {
+	@extend %extend_1;
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+.text-center {
+	text-align: center;
+}
+.main-margin {
+	margin-top: 20px;
+}
+.text-justify {
+	text-align: justify;
+}
+.box-shadow-full {
+	padding: 3rem 1.25rem;
+	position: relative;
+	background-color: $white;
+	margin-bottom: 3rem;
+	z-index: 2;
+	box-shadow: 0 1px 1px 0 background-opacity($black, 0.06), 0 2px 5px 0 background-opacity($black, 0.2);
+}
+.sectiontop-pt4 {
+	padding-top: 4rem;
+}

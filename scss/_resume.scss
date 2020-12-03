@@ -1,0 +1,18 @@
+#resume-section{
+	/* 
+	 * If screen width 990px or less
+	 */
+	@media screen and (max-width: 990px) {
+		p {
+			@include fontsize(9);
+		}
+	}	
+	/* 
+	* If screen width 991px or more
+	*/
+	@media screen and (min-width: 991px) {
+		p {
+			@include fontsize(12);
+		}
+	}
+}

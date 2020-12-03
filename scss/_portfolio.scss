@@ -1,0 +1,8 @@
+#portfolio-section {
+	p {
+		@include fontsize(10);
+	}
+	p, img {
+		padding: 0px 20px 0px 20px;
+	}
+}

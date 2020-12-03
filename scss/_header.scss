@@ -1,0 +1,78 @@
+#header-section {
+	background: linear-gradient(background-opacity($black, 0.7), background-opacity($black, 0.7)), $url_0 no-repeat center top;
+	text-align: center;
+	background-position: center center;
+	min-height: 140vh; /* Done to achieve responsiveness for mobile devices in landscape mode*/
+	width: 100%;
+	background-size: cover;
+	
+	h1 {
+		color: $white;
+		font-weight: 300;
+		letter-spacing: 4px;
+		line-height: 70px;
+		padding: 20px 20px 20px 20px;
+		@media (max-width: 990px) {
+			@include fontsize(30);
+		}
+		@media (min-width: 991px) {
+			@include fontsize(45);
+		}
+	}
+	h2 {
+		color: $white;
+		font-weight: 300;
+		letter-spacing: 2px;
+		@media (max-width: 990px) {
+			@include fontsize(12);
+		}
+		@media (min-width: 991px) {
+			@include fontsize(16);
+		}
+	}
+	span {
+		@include background-opacity($black, 0.3);
+	}
+	a {
+		@media (max-width: 990px) {
+			@include fontsize(10);
+		}
+	
+	}
+	.button {
+		@include background-opacity($black, 0.3);
+		
+		text-transform: uppercase;
+		transition: background-color 0.2s ease-in-out;
+		text-align: center;
+		vertical-align: middle;
+		touch-action: manipulation;
+		cursor: pointer;
+		border: 2px solid;
+		white-space: nowrap;
+		@media (max-width: 990px) {
+			padding: 6px 6px;
+		}
+		@media (min-width: 991px) {
+			padding: 12px 36px;
+		}
+	}
+	.header-translate {
+		@media (max-width: 600px) {
+			transform: translateY(5vh);
+		}
+		@media (min-width: 601px) {
+			transform: translateY(20vh);
+		}
+	}
+	.outline.blue {
+		&:focus {
+			background-color: $blue;
+			color: $white;
+		}
+		&:hover {
+			background-color: $blue;
+			color: $white;
+		}
+	}
+}

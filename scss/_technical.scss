@@ -1,0 +1,10 @@
+#skills-section {
+	h4 {
+		@include fontsize(15);
+		font-weight: 550;
+	}
+	li {
+		@include fontsize(10);
+		line-height: 25px;
+	}
+}

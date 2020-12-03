@@ -1,0 +1,8 @@
+.footer {
+	color: $white;
+	text-align: center;
+	bottom: 0;
+	line-height: 60px;
+	height: 60px;
+	@include fontsize(8);
+}
